@@ -338,6 +338,8 @@ export default {
           "suo.yt": "https://suo.yt/short",
         },
         customBackend: {
+          "TZX增强型后端【vless reality+hy1+hy2】": "https://subapi.tzx.hidns.co",
+          "TZX增强型后端【vless reality+hy1+hy2】": "https://subapi.zeabur.app",
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
@@ -347,6 +349,8 @@ export default {
           "sub-web作者提供": "https://api.wcc.best",
         },
         backendOptions: [
+          { value: "https://subapi.tzx.hidns.co" },
+          { value: "https://subapi.zeabur.app" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
           { value: "https://url.v1.mk" },
@@ -356,6 +360,27 @@ export default {
           { value: "https://api.wcc.best" },
         ],
         remoteConfig: [
+          {
+            label: "TZX规则",
+            options: [
+              {
+                label: "TZX_Online 默认版 多媒体识别港台美日韩地区No_DNS_Leak(与Github同步) ",
+                value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/clash_config.yaml"
+              },
+              {
+                label: "TZX_Online_MultiCountry 识别热门国家地区和热门媒体分组No_DNS_Leak(与Github同步)",
+                value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/ACL4SSR_Online_Full_Mannix_No_DNS_Leak.ini"
+              },
+              {
+                label: "TZX_Online_Full 识别国外媒体多地区分组(与Github同步)",
+                value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/ACL4SSR_Online_Full_MultiMode_No_DNS.ini"
+              },
+              {
+                label: "区分直连和代理极简配置(与Github同步)",
+                value: "https://raw.githubusercontent.com/Tengzexin0/4CL4SSR_/main/Clash_Streamlied_Configuration.ini"
+              }
+            ]
+          },
           {
             label: "CM规则",
             options: [
@@ -1310,3 +1335,4 @@ export default {
   }
 };
 </script>
+
